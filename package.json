@@ -1,0 +1,13 @@
+{
+    "name": "solanasensei",
+    "version": "1.0.0",
+    "description": "A fake AI memecoin oracle website with Phantom wallet integration.",
+    "main": "index.html",
+    "scripts": {
+        "start": "live-server"
+    },
+    "dependencies": {
+        "live-server": "^1.2.1",
+        "solanasensei": "file:"
+    }
+}

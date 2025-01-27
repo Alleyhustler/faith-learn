@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/@solana/web3.js@1.36.0/lib/index.iife.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Bubblegum+Sans&family=Freckle+Face&family=Lilita+One&family=Noto+Serif+SC:wght@200..900&family=Rubik+Broken+Fax&family=Shojumaru&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Faith Learning AI</h1>
+        <p class="tagline">The Etheric Sage Who Navigates the Boundless Realms of Solana Memecoins, Unveiling the Power of Digital Humor</p>
+        <div class="header-right">
+            <div id="wallet-status">Wallet Status: Not Connected</div>
+            <button id="connect-wallet" onclick="connectWallet()">Connect Wallet</button>
+            <div class="social-icons">
+                <a href="faithlearn" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://x.com/Faith_learnAI" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </header>    
+
+    <div class="container">
+        <!-- Left Side Real-Time Data Section -->
+        <aside class="sidebar">
+            <h2>Wallet Overview</h2>
+            <div id="wallet-balance">Balance: 0 SOL</div>
+            <div id="token-holdings">Holdings: None</div>
+            <div id="recent-transactions">Recent Transactions: None</div>
+        </aside>
+
+        <!-- Animated Chat Section -->
+        <section class="chat">
+            <div class="chat-window" id="chat-window">
+                <div class="chat-message bot-message animate">
+                    🖇️ Welcome, wise Degen! Connect your wallet and ask your questions.
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Seek memecoin wisdom..." autocomplete="off">
+                <button class="send-button" onclick="sendMessage()">🖇️</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
